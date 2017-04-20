@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "OPVideoController.h"
 #import "OPMediaManger.h"
+#import "OPVideoVC.h"
+#import "OPVideoPlayer.h"
 
 #define kPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
 @interface TableViewController ()
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%@", kPath);
+    // NSLog(@"%@", kPath);
 }
 
 
@@ -45,19 +47,33 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    OPVideoPlayer *op = [[OPVideoPlayer alloc] init];
+    [op playvideo];
     
-    OPVideoController *vc = [OPMediaManger videoByPath:kPath page:0];
+//    OPVideoController *vc = [OPMediaManger videoByPath:kPath page:0];
+//    
+//    NSLog(@"%@", vc);
+//    
+//    if (vc) {
+//        
+//        [self presentViewController:vc animated:YES completion:nil];
+//        
+//    }else{
+//    
+//        return;
+//    }
     
-    NSLog(@"%@", vc);
+    OPVideoVC *vc1 = [OPMediaManger viewByPath:kPath page:0];
     
-    if (vc) {
+    if (vc1) {
         
-        [self presentViewController:vc animated:YES completion:nil];
+        [self presentViewController:vc1 animated:YES completion:nil];
         
     }else{
-    
+        
         return;
     }
+    
 }
 
 

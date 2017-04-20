@@ -13,7 +13,10 @@
 		041019831D054F1D00114DA1 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 041019821D054F1D00114DA1 /* back.png */; };
 		041019851D054F8800114DA1 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 041019841D054F8800114DA1 /* share.png */; };
 		041019881D05799700114DA1 /* OPVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041019871D05799700114DA1 /* OPVideoController.m */; };
-		0410198E1D05840100114DA1 /* OPMediaManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410198D1D05840100114DA1 /* OPMediaManger.m */; };
+		041019B21D07BE5C00114DA1 /* OPMediaManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 041019AD1D07BE5C00114DA1 /* OPMediaManger.m */; };
+		041019B31D07BE5C00114DA1 /* OPVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 041019AF1D07BE5C00114DA1 /* OPVideoPlayer.m */; };
+		041019B41D07BE5C00114DA1 /* OPVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041019B11D07BE5C00114DA1 /* OPVideoVC.m */; };
+		041019F01D08054E00114DA1 /* UIView+Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 041019EF1D08054E00114DA1 /* UIView+Controller.m */; };
 		04F444991D0528790021C3BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F444981D0528790021C3BE /* main.m */; };
 		04F4449C1D0528790021C3BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4449B1D0528790021C3BE /* AppDelegate.m */; };
 		04F444A21D0528790021C3BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F444A01D0528790021C3BE /* Main.storyboard */; };
@@ -46,8 +49,14 @@
 		041019841D054F8800114DA1 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		041019861D05799700114DA1 /* OPVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPVideoController.h; sourceTree = "<group>"; };
 		041019871D05799700114DA1 /* OPVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPVideoController.m; sourceTree = "<group>"; };
-		0410198C1D05840100114DA1 /* OPMediaManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPMediaManger.h; sourceTree = "<group>"; };
-		0410198D1D05840100114DA1 /* OPMediaManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPMediaManger.m; sourceTree = "<group>"; };
+		041019AC1D07BE5C00114DA1 /* OPMediaManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPMediaManger.h; sourceTree = "<group>"; };
+		041019AD1D07BE5C00114DA1 /* OPMediaManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPMediaManger.m; sourceTree = "<group>"; };
+		041019AE1D07BE5C00114DA1 /* OPVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPVideoPlayer.h; sourceTree = "<group>"; };
+		041019AF1D07BE5C00114DA1 /* OPVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPVideoPlayer.m; sourceTree = "<group>"; };
+		041019B01D07BE5C00114DA1 /* OPVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPVideoVC.h; sourceTree = "<group>"; };
+		041019B11D07BE5C00114DA1 /* OPVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPVideoVC.m; sourceTree = "<group>"; };
+		041019EE1D08054E00114DA1 /* UIView+Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Controller.h"; sourceTree = "<group>"; };
+		041019EF1D08054E00114DA1 /* UIView+Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Controller.m"; sourceTree = "<group>"; };
 		04F444941D0528790021C3BE /* ViewMoviewPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewMoviewPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F444981D0528790021C3BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F4449A1D0528790021C3BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041019AB1D07BE5C00114DA1 /* ViewPLayer */ = {
+			isa = PBXGroup;
+			children = (
+				041019AC1D07BE5C00114DA1 /* OPMediaManger.h */,
+				041019AD1D07BE5C00114DA1 /* OPMediaManger.m */,
+				041019AE1D07BE5C00114DA1 /* OPVideoPlayer.h */,
+				041019AF1D07BE5C00114DA1 /* OPVideoPlayer.m */,
+				041019B01D07BE5C00114DA1 /* OPVideoVC.h */,
+				041019B11D07BE5C00114DA1 /* OPVideoVC.m */,
+				041019EE1D08054E00114DA1 /* UIView+Controller.h */,
+				041019EF1D08054E00114DA1 /* UIView+Controller.m */,
+			);
+			name = ViewPLayer;
+			path = MoviePlayer/ViewPLayer;
+			sourceTree = "<group>";
+		};
 		04F4448B1D0528790021C3BE = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +138,7 @@
 				04F4449B1D0528790021C3BE /* AppDelegate.m */,
 				04F444BC1D05288F0021C3BE /* TableViewController.h */,
 				04F444BD1D05288F0021C3BE /* TableViewController.m */,
+				041019AB1D07BE5C00114DA1 /* ViewPLayer */,
 				04F444C21D052BC10021C3BE /* MoviePlayer */,
 				04F444A01D0528790021C3BE /* Main.storyboard */,
 				04F444A31D0528790021C3BE /* Assets.xcassets */,
@@ -143,15 +169,13 @@
 		04F444C21D052BC10021C3BE /* MoviePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				04F444DE1D0532CB0021C3BE /* icon */,
 				041019861D05799700114DA1 /* OPVideoController.h */,
 				041019871D05799700114DA1 /* OPVideoController.m */,
-				0410198C1D05840100114DA1 /* OPMediaManger.h */,
-				0410198D1D05840100114DA1 /* OPMediaManger.m */,
 				04F444C31D052BC10021C3BE /* DIYButton.h */,
 				04F444C41D052BC10021C3BE /* DIYButton.m */,
 				04F444C91D052BC10021C3BE /* Slider.h */,
 				04F444CA1D052BC10021C3BE /* Slider.m */,
+				04F444DE1D0532CB0021C3BE /* icon */,
 			);
 			path = MoviePlayer;
 			sourceTree = "<group>";
@@ -220,7 +244,7 @@
 				TargetAttributes = {
 					04F444931D0528790021C3BE = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4C2JMB5GD5;
+						DevelopmentTeam = 48K328WFVJ;
 					};
 					04F444AC1D0528790021C3BE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -281,11 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041019B21D07BE5C00114DA1 /* OPMediaManger.m in Sources */,
+				041019B41D07BE5C00114DA1 /* OPVideoVC.m in Sources */,
 				04F4449C1D0528790021C3BE /* AppDelegate.m in Sources */,
 				04F444BE1D05288F0021C3BE /* TableViewController.m in Sources */,
-				0410198E1D05840100114DA1 /* OPMediaManger.m in Sources */,
 				04F444CD1D052BC10021C3BE /* DIYButton.m in Sources */,
 				04F444991D0528790021C3BE /* main.m in Sources */,
+				041019F01D08054E00114DA1 /* UIView+Controller.m in Sources */,
+				041019B31D07BE5C00114DA1 /* OPVideoPlayer.m in Sources */,
 				041019881D05799700114DA1 /* OPVideoController.m in Sources */,
 				04F444D11D052BC10021C3BE /* Slider.m in Sources */,
 			);
@@ -415,11 +442,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ViewMoviewPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneplus.ViewMoviewPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -427,11 +457,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ViewMoviewPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneplus.ViewMoviewPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

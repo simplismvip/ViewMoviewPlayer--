@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class OPVideoVC;
 @class OPVideoController;
 @interface OPMediaManger : NSObject
 
 + (OPVideoController *)videoByPath:(NSString *)path page:(NSInteger)page;
++ (OPVideoVC *)viewByPath:(NSString *)path page:(NSInteger)page;
 // + (BOOL)audioByPath:(NSString *)path page:(NSInteger)page;
 @end

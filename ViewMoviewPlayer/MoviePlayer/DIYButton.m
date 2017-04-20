@@ -25,7 +25,6 @@
     _selectIconImageView.hidden = YES;
     [self addSubview:_selectIconImageView];
     
-    
     // 创建label
     _textLabel = [[UILabel alloc]initWithFrame:CGRectMake(width + 10, 0, frame.size.width - width - 10, width)];
     _textLabel.textColor = [UIColor whiteColor];
@@ -46,7 +45,6 @@
         _selectIconImageView.hidden = YES;
     }
     [super setSelected:selected];
-    
 }
 
 

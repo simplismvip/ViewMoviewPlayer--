@@ -12,5 +12,5 @@
 
 // 初始化方法
 // - (void)setupVideoByPath:(NSString *)path page:(NSInteger)page;
-- (void)setupVideoByArray:(NSMutableArray *)array page:(NSInteger)page;;
+- (void)setupVideoByArray:(NSMutableArray *)array page:(NSInteger)page;
 @end

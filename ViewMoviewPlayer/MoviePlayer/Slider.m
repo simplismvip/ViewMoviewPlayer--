@@ -38,8 +38,10 @@
         // 继承于UIView而不继承于UISlider的原因是，UISlider内部添加的任何View都处于滑轨线的下面，所以继承于view，把创建的view添加到整个slider的上面
         // 一定要是self.bounds; self.frame可能会造成视图偏差；
         _slider = [[UISlider alloc]initWithFrame:self.bounds];
+        
         // 设置slider的图片，给一个空图片
         [_slider setThumbImage:[UIImage imageNamed:@"nil"] forState:UIControlStateNormal];
+        
         // 添加滑块方法
         [_slider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
         [self addSubview:_slider];
@@ -89,6 +91,7 @@
         self.thumbView.center = CGPointMake(centerX, self.frame.size.height / 2);
     }
     else if ([keyPath isEqualToString:@"value"]){
+        
         // 修改滑块位置
         CGFloat progress = self.slider.value / (self.slider.maximumValue - self.slider.minimumValue);
         self.thumbView.center = CGPointMake(self.frame.size.width * progress, self.frame.size.height / 2);
@@ -131,9 +134,11 @@
 {
     // 求出value所在的百分比
     CGFloat progress = slider.value / (slider.maximumValue - slider.minimumValue);
+    
     // 求出thumbView的X点
     CGFloat thumbViewX = self.frame.size.width * progress;
     self.thumbView.center = CGPointMake(thumbViewX, self.frame.size.height / 2);
+    
     // 保存centerX的值
     centerX = self.thumbView.center.x;
 //    NSLog(@"%f",slider.value);
